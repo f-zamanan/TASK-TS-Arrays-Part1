@@ -5,8 +5,8 @@
 // and returns the modified groceries list
 function deleteThirdItem(groceries: string[]): string[] {
   // write your code here...
-  // delete groceries[2];
-  let poppedElement = groceries.splice(2, 2);
+  // delete groceries[2]; this will produce an undefined value baaddd practice
+  groceries.splice(2, 1); // at index 2 delete one element, it will update the array length accordingly, look into mdn docs for splice
 
   return groceries;
 }
