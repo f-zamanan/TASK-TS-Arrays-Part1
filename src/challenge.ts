@@ -5,7 +5,10 @@
 // and returns the modified groceries list
 function deleteThirdItem(groceries: string[]): string[] {
   // write your code here...
-  return [];
+  // delete groceries[2];
+  let poppedElement = groceries.splice(2, 2);
+
+  return groceries;
 }
 
 // Step 2:
@@ -13,7 +16,8 @@ function deleteThirdItem(groceries: string[]): string[] {
 // and returns the modified groceries array
 function insertItemAtBeginning(groceries: string[], item: string): string[] {
   // write your code here...
-  return [];
+  groceries.unshift(item);
+  return groceries;
 }
 
 // Step 3:
@@ -21,7 +25,10 @@ function insertItemAtBeginning(groceries: string[], item: string): string[] {
 // and return the modified groceries array
 function replaceFirstTwoItems(groceries: string[]): string[] {
   // write your code here...
-  return [];
+  // this will replace not append new items
+  groceries[0] = "ketchup";
+  groceries[1] = "chili";
+  return groceries;
 }
 
 export { deleteThirdItem, insertItemAtBeginning, replaceFirstTwoItems };
